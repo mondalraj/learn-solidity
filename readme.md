@@ -61,3 +61,27 @@ Types ->
 - Others
 
 It is used to prevent attacks on blockchain maily while adding malicious blocks.
+When a node is added all the miners have to verify the authenticity of the block by running an algorithm.
+Solving a mathematical problem for miners, is time, effort and money taking process so if they add malicious blocks they are not rewarded and it have a loss on the hacker.
+
+## What is Ethereum?
+Ethereum is an open-source blockchain-based platform.
+Ethereum currency -> Ether
+An decrentralized application which allows you to run a program on blockchain.
+
+### Nodes in Ethereum
+> Types of Nodes
+- Full Node (Locally stores a copy of the entire blockchain)
+- Light Node (Stores only the block header, Depends on full node. For low capacity devices which cannot afford to store the gb's of data)
+- Archive Node (Stores everything kept in full node and built an archive of historical data. Requires tetabytes of diskspace)
+
+### Ethereum Accounts
+An entity with an ether (ETH) balance that can send or receive transactions on Ethereum.
+
+> Types of Ethereum Accounts
+- Externally Owned Account (EOA)
+Whenever a wallet is created EOA is created which can be accessed by Private key.
+EOA is used to send/receive transaction and to interact with Smart Contracts.  
+- Contract Account (CA)
+Controlled by contract code.
+When a smart contract is deployed on ethereum blockchain then contract account is created.
