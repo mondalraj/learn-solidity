@@ -79,9 +79,60 @@ An decrentralized application which allows you to run a program on blockchain.
 An entity with an ether (ETH) balance that can send or receive transactions on Ethereum.
 
 > Types of Ethereum Accounts
-- Externally Owned Account (EOA)
+- Externally Owned Account (EOA)  
 Whenever a wallet is created EOA is created which can be accessed by Private key.
 EOA is used to send/receive transaction and to interact with Smart Contracts.  
-- Contract Account (CA)
+- Contract Account (CA)  
 Controlled by contract code.
 When a smart contract is deployed on ethereum blockchain then contract account is created.
+
+### Smart Contract
+A program that run on Ethereum blockchain.  
+Mainly (if-else) contition program.  
+> Each node has the following :-
+- Current state of all smart contracts.
+- History of both transaction and smart contract.
+
+### Decentralized Apps (Dapps)
+Dapps -> Smart Contract (Backend) + Frontend  
+> Diff b/w Centralized and decentralized apps
+Centralized Apps : Not trustworthy, censorship, you pay, go down.
+Dapps : Trusthworthy, no censorship, they pay, can never go down.
+
+### Ethereum Virtual Machine (EVM)
+It is used to protect the attack of viruses and hackers in our system.
+Every program on ethereum runs on EVM not directly on system so that if any hacker adds a new block on virus on the blockchain so it cannot harm our system.
+
+### Ethereum Gas
+It is a fees which is used to run a program on ethereum blockchain.
+More the number of operations, more the gas is required.
+Eg. 
+10 * 3 - 6 = ?
+Multiplication - 5gas, Subtraction - 3gas, equal to - 3 gas.
+Total gas = 5 + 3 + 3 = 11 gas unit
+[Ethereum Gas Costs](https://github.com/djrtwo/evm-opcode-gas-costs/blob/master/opcode-gas-costs_EIP-150_revision-1e18248_2017-04-12.csv)
+
+- Any transaction that modifies the blockchain costs gas.
+- The user that generated the transaction pays for the gas.
+
+### Ethereum Gas Price
+It is the amount the sender wants to pay per unit of gas to get the transaction mined, gasPrice is set by the sender.  
+Gas Price are denoted in gwei. ( 1gwei = 10^-9 ETH )
+
+Eg. 1 gas price = 10 gwei
+
+The higher the gas price the faster the transaction will be mined.
+
+### Ethereum Gas limit
+It is the maximum gas the transaction can consume.
+Set by the sender.
+
+Example - 
+Let say A wants to send B 2 ETH. So what will be the total fees A that has to pay?
+- A set the gas price per unit = 100 gwei
+Transaction gas limit = 21,000 units
+> Total fee will be: Gas units(limit) * Gas price per unit
+
+Total fee will be : 21,000 * 100 = 210,000 gwei or 0.0021ETH
+
+### Ethereum Block
